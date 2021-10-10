@@ -1,6 +1,9 @@
 # Python Stocks finder
 Easy way to find and save your favorite stocks
 
+
+[Project](https://github.com/pivotando-tech/python-stocks-finder/projects/1)
+
 ## Features
   - [ ] Find stocks by search
   - [ ] Create a wallet to save favorite stocks
