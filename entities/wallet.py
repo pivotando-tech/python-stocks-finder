@@ -1,5 +1,3 @@
-from entities.user import User
-
 
 class Wallet(object):
     ownerName = ''
