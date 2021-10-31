@@ -5,5 +5,3 @@ class Stock:
         self.description = description
         self.price = price
         self.update_at = update_at
-
-
