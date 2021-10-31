@@ -32,8 +32,11 @@ mockStocks: [Stock] = [
         'update_at': '2021-10-30'
     },
 ]
+
+
 # TODO: bb: Verificar a melhor forma de fazer a concatenacao da string.
 
-youStocks = 'Suas Ações'
-for stock in mockStocks:
-    print(stock['name'], '- Preço atual:', stock['price'], '| Descrição: ', stock['description'], '| Atualizado em: ', stock['update_at'])
+def showWallet():
+    for stock in mockStocks:
+        print(stock['name'], '- Preço atual:', stock['price'], '| Descrição: ', stock['description'],
+              '| Atualizado em: ', stock['update_at'])
