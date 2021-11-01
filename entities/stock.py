@@ -1,4 +1,3 @@
-
 class Stock:
     def __init__(self, name, description, price, update_at):
         self.name = name
