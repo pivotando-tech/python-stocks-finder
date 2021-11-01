@@ -9,5 +9,6 @@ def actionChoice():
     option = int(input('Opção: '))
     if option == 1:
         walletScreen()
-    else:
+    elif option == 2:
         print("Levar para a tela de pesquisa de ações")
+
