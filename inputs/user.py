@@ -10,4 +10,4 @@ def actionChoice():
     if option == 1:
         walletScreen()
     elif option == 2:
-            print("Levar para a tela de pesquisa de ações")
+        print("Levar para a tela de pesquisa de ações")
