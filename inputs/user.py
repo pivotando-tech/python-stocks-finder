@@ -1,6 +1,7 @@
 from messages import userMasages
 from views.WalletScreen import walletScreen
 
+
 def actionChoice():
     print(userMasages.viewWalletMsg, "digite [1]")
     print(userMasages.researchStocksMsg, "digite [2]")
