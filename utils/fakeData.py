@@ -34,11 +34,8 @@ mockStocks: [Stock] = [
 ]
 
 
-# TODO: bb: Verificar a melhor forma de fazer a concatenacao da string.
-
 def showWallet():
     for stock in mockStocks:
-        #print(stock['name'], '- Preço atual:', stock['price'], '| Descrição: ', stock['description'],
-             #'| Atualizado em: ', stock['update_at'])
-        print('{} - Preço atual:{} | Descrição:{} | Atualizado em:{}'.format(stock['name'], stock['price'],
-                                                                                stock['description'], stock['update_at']))
+        print('{} - Preço atual:{} | Descrição:{} | Atualizado em:{}'.format(
+            stock['name'], stock['description'],
+            stock['price'], stock['update_at']))
