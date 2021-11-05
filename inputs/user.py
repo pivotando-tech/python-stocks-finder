@@ -6,15 +6,15 @@ def actionChoice():
     print(userMasages.viewWalletMsg, "digite [1]")
     print(userMasages.researchStocksMsg, "digite [2]")
     # TODO: Fazer uma verificação para só permitir o user digitar 1 ou 2 [Fazer verificação numa funcao externa]
-    option = []
+    option = 0
 
     while option != 1 and option != 2:
         option = int(input('Opção: '))
 
-    if option == 1:
-        walletScreen()
-    elif option == 2:
-        print("Levar para a tela de pesquisa de ações")
-    else:
-        invalidOption()
+        if option == 1:
+            walletScreen()
+        elif option == 2:
+            print("Levar para a tela de pesquisa de ações")
+        else:
+            invalidOption()
 
