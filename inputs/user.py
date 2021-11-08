@@ -1,4 +1,5 @@
 from messages import userMasages
+from views.SearchStocksScreen import searchStocksScreen
 from views.WalletScreen import walletScreen
 from messages.valorinvalido import invalidOption
 
@@ -16,7 +17,7 @@ def actionChoice():
         if option == 1:
             walletScreen()
         elif option == 2:
-            print("Levar para a tela de pesquisa de ações")
+            searchStocksScreen()
         else:
             invalidOption()
 
