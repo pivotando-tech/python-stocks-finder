@@ -4,7 +4,8 @@ from service.api import requestStock
 
 def searchStocksScreen():
     teste = requestStock(pesquisaAcoesMsg)
-    while teste != '':
+    while teste == '':
         print('Aguarde...')
     print(teste)
 
+searchStocksScreen()
