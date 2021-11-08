@@ -1,4 +1,4 @@
-from messages.criarArrayUsuario import createArrayUser
+from messages.createUserArray import createArrayUser
 from messages.welcome import welcome
 from inputs.user import actionChoice
 
