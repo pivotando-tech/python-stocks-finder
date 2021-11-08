@@ -1,9 +1,9 @@
 import uuid
-
+from inputs import createUserInput
 
 class User(object):
     id = ''
-    name = ''
+    name = createUserInput
     wallet = []
 
     def __init__(self, name, wallet):
