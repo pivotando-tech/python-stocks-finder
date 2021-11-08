@@ -1,6 +1,10 @@
 from inputs.searchInput import pesquisaAcoesMsg
+from service.api import requestStock
 
 
 def searchStocksScreen():
-    print(pesquisaAcoesMsg)
+    teste = requestStock(pesquisaAcoesMsg)
+    while teste != '':
+        print('Aguarde...')
+    print(teste)
 

@@ -2,6 +2,7 @@ import requests
 from requests.exceptions import HTTPError
 from service import strings
 
+
 def requestStock(symbol: str):
     try:
         getStockInfo = requests.get(strings.baseUrl, params={'symbol': symbol})
