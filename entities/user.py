@@ -1,6 +1,7 @@
 import uuid
 from inputs import createUserInput
 
+
 class User(object):
     id = ''
     name = createUserInput
