@@ -1,8 +1,9 @@
 from entities.user import User
-from inputs.createUserInput import newUser
-
 
 createArrayUser = []
-newUserInput = User(name=newUser(), wallet=[])
-createArrayUser.append(newUserInput)
 
+
+def createNewUser():
+    userNameInput = str(input('Digite o nome do novo usuário: ')).strip().upper()
+    newUser = User(name=userNameInput, wallet=[])
+    createArrayUser.append(newUser)
