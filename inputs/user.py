@@ -2,6 +2,7 @@ from messages import userMasages
 from views.SearchStocksScreen import searchStocksScreen
 from views.WalletScreen import walletScreen
 from messages.valorinvalido import invalidOption
+from time import sleep
 
 
 def actionChoice():
@@ -16,8 +17,13 @@ def actionChoice():
 
         if option == 1:
             walletScreen()
+            #novaAcao = 0
+            novaAcao = int(input('Nova ação: '))
+            if novaAcao == 1:
+                walletScreen()
         elif option == 2:
             searchStocksScreen()
         else:
             invalidOption()
 
+sleep(0.5)
