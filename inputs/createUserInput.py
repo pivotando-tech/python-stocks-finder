@@ -1,4 +1,0 @@
-
-def newUser():
-
-    return nameNewUser
