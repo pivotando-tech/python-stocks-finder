@@ -1,6 +1,5 @@
 import requests
 from requests.exceptions import HTTPError
-
 from service import strings
 
 
