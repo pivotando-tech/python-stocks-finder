@@ -4,8 +4,9 @@ from views.WalletScreen import walletScreen
 from messages.valorinvalido import invalidOption
 
 
-def actionChoice():
-
+def actionChoice(userName: str = ''):
+    print(f'''Olá {userName}
+    ''')
     print(userMasages.viewWalletMsg, "digite [1]")
     print(userMasages.researchStocksMsg, "digite [2]")
 
