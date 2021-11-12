@@ -1,7 +1,7 @@
 from messages import userMasages
-from views.SearchStocksScreen import searchStocksScreen
 from views.WalletScreen import walletScreen
 from messages.valorinvalido import invalidOption
+from views.showStocksInfo import stockInfoAndOptions
 
 
 def actionChoice(userName: str = ''):
@@ -18,7 +18,7 @@ def actionChoice(userName: str = ''):
         if option == 1:
             walletScreen()
         elif option == 2:
-            searchStocksScreen()
+            stockInfoAndOptions()
         else:
             invalidOption()
 
