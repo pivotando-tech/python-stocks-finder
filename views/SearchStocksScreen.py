@@ -1,5 +1,6 @@
 from service.api import requestStock
-from inputs.optioSaveAction import OptionSaveAction
+from inputs.optioSaveStocks import optionSaveStocks
+
 
 
 def searchStocksScreen():
@@ -9,4 +10,4 @@ def searchStocksScreen():
     while teste == '':
         print('Aguarde...')
     print(teste)
-    OptionSaveAction()
+    optionSaveStocks()
