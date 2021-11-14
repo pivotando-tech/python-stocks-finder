@@ -5,8 +5,7 @@ from views.createUser import createNewUser
 formattedMsg = f'''
 {forRegisterMsg}: [1]
 {forSkipRegistrationMsg}: [2]
-'''
-
+Sua opção: '''
 
 def registerFlow():
     userChoice = 0
