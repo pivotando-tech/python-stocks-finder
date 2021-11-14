@@ -7,3 +7,6 @@ Você não está cadastrado, para salvar as ações em uma carteira, você preci
 forRegisterMsg = 'Para se registrar, digite'
 forSkipRegistrationMsg = 'Para pular essa etapa, digite'
 invalidChoiceMsg = 'Opção inválida, digite [1] ou [2]'
+sistemOptionMsg = '''[1] Para Visualizar carteira. 
+[2] Para pesquisar novas ações.
+[3] Para finalizar programa'''
