@@ -6,7 +6,9 @@ from messages.valorinvalido import invalidOption
 from time import sleep
 
 
-def actionChoice():
+def actionChoice(userName: str = ''):
+    print(f'''Olá {userName}
+    ''')
 
     option = 0
 
