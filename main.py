@@ -1,10 +1,14 @@
-from messages.createUserArray import createArrayUser
+from inputs.registerFlow import registerFlow
+from views.createUser import userArray
 from messages.welcome import welcome
-from inputs.user import actionChoice
+from messages.userMasages import wantsToRegisterNewUserMsg
+from inputs.selectScreens import actionChoice
 
 welcome()
 
-if len(createArrayUser) != 0:
-    print('Não existe usuário')
+if len(userArray) == 0:
+    print(wantsToRegisterNewUserMsg)
+    registerFlow()
+
 else:
     actionChoice()
