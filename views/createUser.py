@@ -6,6 +6,6 @@ userArray = []
 
 def createNewUser():
     userNameInput = str(input('Digite o nome do novo usuário: ')).strip()
-    newUser = User(name=userNameInput, wallet=[])
+    newUser = User(name=userNameInput)
     userArray.append(newUser)
     return newUser
