@@ -1,5 +1,4 @@
 from messages.userMasages import optioSaveActionsMsg
-from views.SearchStocksScreen import searchStocksScreen
 
 
 def optionSaveStocks():
@@ -7,6 +6,4 @@ def optionSaveStocks():
 
     print(saveAction)
     if saveAction == 1:
-        print('Salvar ação!!')
-    else:
-        searchStocksScreen()
+        print('Salvando ação...')

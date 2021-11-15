@@ -22,7 +22,6 @@ def actionChoice(userName: str = ''):
             sleep(5)
         elif option == 2:
             stockInfoAndOptions()
-            searchStocksScreen()
             sleep(3)
         elif option == 3:
             print('Finalizando...')
