@@ -1,8 +1,8 @@
-from messages.userMasages import optioSaveActionsMsg
+from messages.userMasages import optionSaveActionsMsg
 
 
 def optionSaveStocks():
-    saveAction = int(input(optioSaveActionsMsg))
+    saveAction = int(input(optionSaveActionsMsg))
 
     print(saveAction)
     if saveAction == 1:
