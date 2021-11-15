@@ -1,4 +1,4 @@
-
+from views.showStocksInfo import stockInfoAndOptions
 from messages.userMasages import sistemOptionMsg
 from views.SearchStocksScreen import searchStocksScreen
 from views.WalletScreen import walletScreen
@@ -21,7 +21,7 @@ def actionChoice(userName: str = ''):
             walletScreen()
             sleep(5)
         elif option == 2:
-            searchStocksScreen()
+            stockInfoAndOptions()
             sleep(3)
         elif option == 3:
             print('Finalizando...')
