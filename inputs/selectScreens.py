@@ -1,24 +1,32 @@
-from messages import userMasages
-from views.SearchStocksScreen import searchStocksScreen
+from views.showStocksInfo import stockInfoAndOptions
+from messages.userMasages import sistemOptionMsg
 from views.WalletScreen import walletScreen
 from messages.valorinvalido import invalidOption
+from time import sleep
 
 
 def actionChoice(userName: str = ''):
     print(f'''Olá {userName}
     ''')
-    print(userMasages.viewWalletMsg, "digite [1]")
-    print(userMasages.researchStocksMsg, "digite [2]")
 
-    option = 0
+    option = ''
 
-    while option != 1 and option != 2:
-        option = int(input('Opção: '))
+    while option != '3':
+        print(sistemOptionMsg)
+        option = str(input('Qual sua opção: '))
+        sleep(1)
 
-        if option == 1:
+        if option == '1':
             walletScreen()
-        elif option == 2:
-            searchStocksScreen()
+            sleep(5)
+        elif option == '2':
+            stockInfoAndOptions()
+            sleep(3)
+        elif option == '3':
+            print('Finalizando...')
+            sleep(1)
         else:
             invalidOption()
+            sleep(1)
+
 
