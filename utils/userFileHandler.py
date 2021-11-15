@@ -1,5 +1,8 @@
 import json
 
+from entities.stock import Stock
+from entities.user import User
+
 filePath = '.././userData.json'
 
 
@@ -17,12 +20,8 @@ def updateFile(key, data):
         json.dump(fileData, file, indent=4)
 
 
-infos = '{"name": "cash3"}'
+def updateStockInWallet(name, description, price, update_at):
+    stockInfo = Stock(name=name, description=description, price=price, update_at=update_at)
+    convertedObj = json.dumps(stockInfo.__dict__)
 
-
-# updateFile('wallet', infos)
-
-test = readFile()
-
-
-print(type(test['wallet'][5]))
+    updateFile('wallet', convertedObj)
