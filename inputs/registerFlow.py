@@ -8,15 +8,15 @@ formattedMsg = f'''
 Sua opção: '''
 
 def registerFlow():
-    userChoice = 0
+    userChoice = ''
 
-    while userChoice != 1 and userChoice != 2:
-        userChoice = int(input(formattedMsg))
+    while userChoice != '1' and userChoice != '2':
+        userChoice = str(input(formattedMsg))
 
-        if userChoice == 1:
+        if userChoice == '1':
             newUser = createNewUser()
             actionChoice(newUser.name)
-        elif userChoice == 2:
+        elif userChoice == '2':
             actionChoice()
         else:
             print(invalidChoiceMsg)
