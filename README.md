@@ -7,6 +7,6 @@ Easy way to find and save your favorite stocks
 ## Features
   - [X] Find stocks by search
   - [X] Create a wallet to save favorite stocks
-  - [ ] Add stocks to the wallet
-  - [ ] The wallet will save the name of the stocks and its last price
-  - [ ] [ Bonus feature ] Save wallet info into device disk
+  - [X] Add stocks to the wallet
+  - [X] The wallet will save the name of the stocks and its last price
+  - [X] [ Bonus feature ] Save wallet info into device disk
