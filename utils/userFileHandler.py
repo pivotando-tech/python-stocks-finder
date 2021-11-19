@@ -3,7 +3,7 @@ import json
 from entities.stock import Stock
 from entities.user import User
 
-filePath = '../userData.json'
+filePath = './userData.json'
 
 
 def readFile():
@@ -35,11 +35,6 @@ def createUserIntoFile(userName):
         handleJson = json.loads(convertedObj)
         file.seek(0)
         file.write(json.dumps(handleJson))
-        file.truncate()
+        file.close()
 
-    return userInfo
-
-
-# createUserIntoFile('teste')
-
-# updateStockInWallet(name='test', description='test', price='13,4', update_at='13/11,2021')
+        return userInfo

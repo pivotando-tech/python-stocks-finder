@@ -1,1 +1,7 @@
-{"id": "f27f6e5d-a633-4906-bbcc-6816e22ac982", "name": "teste", "wallet": []}
+{
+    "id": "b6a8e166-0333-4118-bfd5-486d1abd9be8",
+    "name": "FilipeMarques",
+    "wallet": [
+        "{\"name\": \"test\", \"description\": \"test\", \"price\": \"13,4\", \"update_at\": \"13/11,2021\"}"
+    ]
+}
