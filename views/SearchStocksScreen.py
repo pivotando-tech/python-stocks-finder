@@ -3,8 +3,10 @@ from service.api import requestStock
 
 def searchStocksScreen():
     pesquisaAcoesMsg = input('Digite o código da ação desejada: ').strip().upper()
-    teste = requestStock(pesquisaAcoesMsg)
+    stock = requestStock(pesquisaAcoesMsg)
 
-    while teste == '':
+    while stock == '':
         print('Aguarde...')
-    print(teste)
+    print(stock)
+    formattedStock = stock['results'][pesquisaAcoesMsg]
+    return formattedStock

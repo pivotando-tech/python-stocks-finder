@@ -7,6 +7,7 @@ formattedMsg = f'''
 {forSkipRegistrationMsg}: [2]
 Sua opção: '''
 
+
 def registerFlow():
     userChoice = ''
 

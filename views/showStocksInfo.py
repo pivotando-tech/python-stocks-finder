@@ -3,5 +3,5 @@ from views.SearchStocksScreen import searchStocksScreen
 
 
 def stockInfoAndOptions():
-    searchStocksScreen()
-    optionSaveStocks()
+    stockSearched = searchStocksScreen()
+    optionSaveStocks(stockSearched)
