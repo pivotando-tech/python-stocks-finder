@@ -7,7 +7,7 @@ def searchStocksScreen():
 
     while teste == '':
         print('Aguarde...')
-    print(teste)
+
 
     infoStockes: [Stock] = [teste]
     for stock in infoStockes:
