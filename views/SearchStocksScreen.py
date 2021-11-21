@@ -9,8 +9,9 @@ def searchStocksScreen():
         print('Aguarde...')
 
 
+
     infoStockes: [Stock] = [teste]
     for stock in infoStockes:
-        print('{} - Preço atual:{} | Descrição:{} | Atualizado em:{}'.format(
-            stock['name'], stock['description'],
-            stock['price'], stock['update_at']))
+        print('{} - Preço atual:{} | Atualizado em:{}\nDescrição:{}...\n'.format(
+            stock['results'][pesquisaAcoesMsg]['name'], stock['results'][pesquisaAcoesMsg]['price'],
+            stock['results'][pesquisaAcoesMsg]['updated_at'], stock['results'][pesquisaAcoesMsg]['description'][:100]))
