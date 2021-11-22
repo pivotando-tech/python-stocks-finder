@@ -1,5 +1,5 @@
 from views.showStocksInfo import stockInfoAndOptions
-from messages.userMasages import sistemOptionMsg
+from messages.userMasages import systemOptionMsg
 from views.WalletScreen import walletScreen
 from messages.valorinvalido import invalidOption
 from time import sleep
@@ -12,7 +12,7 @@ def actionChoice(userName: str = ''):
     option = ''
 
     while option != '3':
-        print(sistemOptionMsg)
+        print(systemOptionMsg)
         option = str(input('Qual sua opção: '))
         sleep(1)
 

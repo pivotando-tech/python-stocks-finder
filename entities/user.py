@@ -6,12 +6,12 @@ class User(object):
     name = ''
     wallet = []
 
-    def __init__(self, name, wallet):
-        self.id = uuid.uuid4()
+    def __init__(self, name):
+        self.id = str(uuid.uuid4())
         self.name = name
-        self.wallet = wallet
+        self.wallet = []
 
 
-def makeUser(name, wallet):
-    user = User(name, wallet)
+def makeUser(name):
+    user = User(name)
     return user
