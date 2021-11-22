@@ -3,7 +3,7 @@ import json
 from entities.stock import Stock
 from entities.user import User
 
-filePath = './userData.json'
+filePath = 'userData.json'
 
 
 def readFile():
