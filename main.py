@@ -7,7 +7,7 @@ from inputs.selectScreens import actionChoice
 
 welcome()
 
-if len(userArray) != 0:
+if len(userArray) == 0:
     print(wantsToRegisterNewUserMsg)
 
     registerFlow()

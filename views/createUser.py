@@ -1,6 +1,9 @@
-from utils.userFileHandler import createUserIntoFile
+from utils.userFileHandler import createUserIntoFile, readFile
 
-userArray = []
+user = readFile()
+
+if user['name'] != '':
+    userArray = [user]
 
 
 def createNewUser():
