@@ -1,15 +1,30 @@
+import json
+
 from utils.userFileHandler import readFile
 
 youStocksMsg = 'Suas Ações'
-wallet = readFile()
-#print(wallet['wallet'])
+userInfo = readFile()
+wallet = userInfo['wallet']
+
 
 def showWallet():
-    for stock in wallet['wallet']:
-        # print('{} - Preço atual:{} | Descrição:{} | Atualizado em:{}'.format(
-        #     stock['name'], stock['description'],
-        #     stock['price'], stock['update_at']))
-        print(stock)
+
+    for stock in wallet:
+        parse = json.loads(stock)
+        data = {
+            'name': parse['name'],
+            'price': parse['price'],
+            'description': parse['description'],
+            'update_at': parse['update_at']
+        }
+        print(f'''{'-' * 60}
+Name: {data['name']}
+Price: R$ {data['price']}
+Description: {data['description'][:90]}...
+Last Update: {data['update_at']}
+        ''')
+
+
 def walletScreen():
     print(youStocksMsg)
     showWallet()
