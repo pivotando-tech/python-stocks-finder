@@ -10,3 +10,5 @@ optionSaveActionsMsg = 'Voce deseja salvar essa ação na sua carteira? [1] para
 systemOptionMsg = '''[1] Para Visualizar carteira. 
 [2] Para pesquisar novas ações.
 [3] Para finalizar programa'''
+systemOptionMsgWithOutStock = '''[1] Para pesquisar ações.
+[2] Para finalizar programa'''

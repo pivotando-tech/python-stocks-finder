@@ -2,7 +2,7 @@ from utils.userFileHandler import readFile
 
 youStocksMsg = 'Suas Ações'
 wallet = readFile()
-print(wallet['wallet'])
+#print(wallet['wallet'])
 
 def showWallet():
     for stock in wallet['wallet']:
