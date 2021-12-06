@@ -1,8 +1,7 @@
 from utils.userFileHandler import readFile
 from views.allUserOptions import showAllOptions
 from views.showStocksInfo import stockInfoAndOptions
-from messages.userMasages import systemOptionMsg, systemOptionMsgWithOutStock
-from views.WalletScreen import walletScreen
+from messages.userMasages import systemOptionMsgWithOutStock
 from messages.valorinvalido import invalidOption
 from time import sleep
 
@@ -14,7 +13,6 @@ def actionChoice(userName: str = ''):
     option = ''
 
     infoWallet = readFile().get('wallet')
-
 
     if len(infoWallet) != 0:
 

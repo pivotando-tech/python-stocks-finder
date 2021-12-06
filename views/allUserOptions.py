@@ -1,7 +1,7 @@
 from messages.userMasages import systemOptionMsg
 from messages.valorinvalido import invalidOption
 from utils.userFileHandler import readFile
-from views.WalletScreen import walletScreen
+from views.WalletScreen import showWallet
 from views.showStocksInfo import stockInfoAndOptions
 from time import sleep
 
@@ -15,8 +15,8 @@ def showAllOptions(option):
         if option == '1':
             updateWallet = readFile().get('wallet')
             if len(updateWallet) != 0:
-                walletScreen()
-                sleep(5)
+                showWallet(updateWallet)
+                sleep(1)
         elif option == '2':
             stockInfoAndOptions()
             sleep(3)

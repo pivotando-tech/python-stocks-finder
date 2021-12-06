@@ -7,6 +7,13 @@ def searchStocksScreen():
 
     while stock == '':
         print('Aguarde...')
-    print(stock)
     formattedStock = stock['results'][pesquisaAcoesMsg]
+
+
+    print(f'''{'-' * 60}
+    Name: {formattedStock['name']}
+    Price: R$ {formattedStock['price']}
+    Description: {formattedStock['description'][:90]}...
+    Last Update: {formattedStock['updated_at']}
+            ''')
     return formattedStock
