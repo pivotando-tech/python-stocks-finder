@@ -1,18 +1,20 @@
 from inputs.registerFlow import registerFlow
 from utils.userFileHandler import readFile
-from views.createUser import userArray
 from messages.welcome import welcome
 from messages.userMasages import wantsToRegisterNewUserMsg
 from inputs.selectScreens import actionChoice
 
 welcome()
 
-if len(userArray) == 0:
-    print(wantsToRegisterNewUserMsg)
+user = readFile()
 
+
+if user['name'] == 'provisory':
+    print(wantsToRegisterNewUserMsg)
     registerFlow()
 
 else:
-    user = readFile()
-
     actionChoice(userName=user['name'])
+
+
+# todo: [FILIPE] - make async function to write data before check if user exists

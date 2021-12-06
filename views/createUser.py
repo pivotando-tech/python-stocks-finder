@@ -1,9 +1,12 @@
-from utils.userFileHandler import createUserIntoFile, readFile
+from time import sleep
 
+from utils.userFileHandler import createUserIntoFile, readFile
+userArray = []
 user = readFile()
+test = createUserIntoFile('provisory')
 
 if user['name'] != '':
-    userArray = [user]
+    userArray.append(test)
 
 
 def createNewUser():
