@@ -16,7 +16,7 @@ def showAllOptions(option):
             updateWallet = readFile().get('wallet')
             if len(updateWallet) != 0:
                 showWallet(updateWallet)
-                sleep(1)
+                sleep(3)
         elif option == '2':
             stockInfoAndOptions()
             sleep(3)
