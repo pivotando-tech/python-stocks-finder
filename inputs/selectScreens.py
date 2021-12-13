@@ -1,24 +1,40 @@
-from messages import userMasages
-from views.SearchStocksScreen import searchStocksScreen
-from views.WalletScreen import walletScreen
+from utils.userFileHandler import readFile
+from views.allUserOptions import showAllOptions
+from views.showStocksInfo import stockInfoAndOptions
+from messages.userMasages import systemOptionMsgWithOutStock
 from messages.valorinvalido import invalidOption
+from time import sleep
 
 
 def actionChoice(userName: str = ''):
     print(f'''Olá {userName}
     ''')
-    print(userMasages.viewWalletMsg, "digite [1]")
-    print(userMasages.researchStocksMsg, "digite [2]")
 
-    option = 0
+    option = ''
 
-    while option != 1 and option != 2:
-        option = int(input('Opção: '))
+    infoWallet = readFile().get('wallet')
 
-        if option == 1:
-            walletScreen()
-        elif option == 2:
-            searchStocksScreen()
-        else:
-            invalidOption()
+    if len(infoWallet) != 0:
 
+        showAllOptions(option)
+    else:
+
+        while option != '2':
+            print(systemOptionMsgWithOutStock)
+            option = str(input('Qual sua opção: '))
+            sleep(1)
+
+            if option == '1':
+                stockInfoAndOptions()
+                sleep(3)
+                updateWallet = readFile().get('wallet')
+
+                if len(updateWallet) != 0:
+                    showAllOptions(option)
+
+            elif option == '2':
+                print('Finalizando...')
+                sleep(1)
+            else:
+                invalidOption()
+                sleep(1)
