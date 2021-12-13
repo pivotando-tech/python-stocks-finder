@@ -15,3 +15,6 @@ def optionSaveStocks(stockInfo):
             price=stockInfo['price'],
             update_at=stockInfo['updated_at']
         )
+
+
+
